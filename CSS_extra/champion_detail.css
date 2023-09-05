@@ -1,0 +1,368 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    min-height: 90vh;
+    background: var(--color-main);
+    color: var(--color-letter);
+}
+
+/*-------------HEADER------------------*/
+.header  {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    /* background-image: url("../Img/071823_Patch_13_14_Notes_Article_Banner.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+
+.champions{
+    display:block;
+    width: 1361px;
+    height: 700px;
+    margin: 22px 0 150px 150px;
+   
+}
+.champions .champion_top{
+    width: 100%;
+    height: 350px;
+}
+.champions .champion_top .champion_top_left .info_character{
+    position: absolute;
+    float: left;
+    left: 250px;
+    top: 50px;
+}
+.champions .champion_top .champion_top_left .info_character p{
+    float: left;
+    padding-left: 50px;
+    font-size: 1.5em;
+}
+.champions .champion_top .champion_top_left{
+    position: relative;
+    width: 1000px;
+    height: 100%;
+}
+.champions .champion_top .champion_top_left .img_character{
+    margin-left: 20px;
+}
+.champions .champion_top .champion_top_left .img_character img{
+    border: 0.2em solid;
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+    image-rendering: auto;
+    margin-top: 50px;
+}
+.champions .champion_top .champion_top_left .img_skill .skill {
+    float: left;
+    position: relative;
+    left: 250px;
+    top: -70px;
+    padding-left: 15px;
+}
+.champions .champion_top .champion_top_right{
+    position: relative;
+    top: -375px;
+    float: right;
+    width: 600px;
+    height: 100%;
+    color: black;
+}
+.champions .champion_top .champion_top_right ul{
+    box-sizing: border-box;
+    border: black solid;
+    width: 250px;
+    height: 180px;
+    margin-top: 70px;
+    background-color: #F8F5F2;
+    border-radius: 10%;
+    list-style: none;
+    margin-left: 200px;
+}
+.champions .champion_top .champion_top_right ul li{
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-bottom: black solid 1px;
+    /* border-spacing:1px; */
+    /* margin-left: -36px; */
+}
+.champions .champion_top .champion_top_right ul li span{
+    float: right;
+    margin-right: 40px;
+}
+.champions .champion_bottom  {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: row;
+    width:1200px;
+    position: relative;
+    top: -400px;
+    height: 500px;
+}
+.champions .champion_bottom .champion_bottom_button{
+    display: flex;
+    width: 1200px;
+    
+}
+.champions .champion_bottom .champion_bottom_button .tablink {
+    background-color: black;
+    color: #F8F5F2;
+    display: flex;
+    border: white solid 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 100%;
+    border-bottom: blue solid 1px;
+    justify-content: space-around;
+  }
+.champions .champion_bottom .champion_bottom_button .tablink:hover {
+   color: #F5BE41;
+   border-bottom: #F5BE41 solid 1px;
+  }
+  /* .champions .champion_bottom hr{
+    color:rgb(9, 245, 249); 
+    display: block;
+    position: absolute;
+    top: 30px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  } */
+  .champions .champion_bottom .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+  }
+  .champions .champion_bottom #Builds{
+    margin-top: -20px;
+  }
+  .champions .champion_bottom #Builds .Builds_left{
+    color: var(--color-extra);
+    text-align: center;
+    background-color: #F8F5F2;
+    width: 510px;
+    height: 320px;
+    float: left;
+    margin-top: -80px;
+    margin-left: 10px;
+    
+  }
+  .champions .champion_bottom #Builds .Builds_left img{
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+  }
+  .champions .champion_bottom #Builds .Builds_right{
+    color: var(--color-extra);
+   display: block;
+   position:absolute;
+   left: 220px;
+  }
+  .champions .champion_bottom #Builds .Builds_right .Builds_right_top{
+    background-color: #F8F5F2;
+    width: 600px;
+    height: 190px;
+    margin-top: -80px;margin-left: 350px;
+  }
+  .champions .champion_bottom #Builds .Builds_right .Builds_right_top img{
+    width: 100%;
+    height: 190px;
+  }
+  .champions .champion_bottom #Builds .Builds_right .Builds_right_bottom{
+    background-color: #F8F5F2;
+    width: 600px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 350px;
+  }
+  .champions .champion_bottom #Builds .Builds_right .Builds_right_bottom img{
+    width: 100%;
+    height: 100%;
+  }
+  .champions .champion_bottom #Counters{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+.champions .champion_bottom #Counters .Counters_character{ 
+    background-color: #F8F5F2;
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px;
+    margin: -90px 20px;
+    text-align:center ;
+    border-radius: 10px;
+}
+.champions .champion_bottom #Counters .Counters_character .circle {
+    background: #456BD9;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    height: 7em;
+    width: 7em;
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  .champions .champion_bottom #Counters .Counters_character .circle img{
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    height: 7em;
+    width: 7em;
+    margin-left: -2px;
+    margin-top: -3px;
+  }
+  .champions .champion_bottom #Counters .Counters_character p{
+    color: #F5BE41;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .champions .champion_bottom #Counters .Counters_character span{
+    color:black;
+  }
+.champions .champion_bottom #Combo {
+    margin-top: -20px;
+}
+/* .champions .champion_bottom #Combo .Combo_top{
+    width: 100%;
+    background-color: #F8F5F2;
+    display: flex;
+    margin-top: -80px;
+}
+.champions .champion_bottom #Combo .Combo_top .Combo_text{
+    color:#0F1C3F;
+    width: 20%;
+    border-right: 1px solid black;
+}
+.champions .champion_bottom #Combo .Combo_top .Combo_video{
+    width: 80%;
+    color: #0F1C3F;
+    text-align: center;
+} */
+.champions .champion_bottom #Combo .Combo_bottom{
+    width: 100%;
+    height: 400px;
+    margin-top: -90px;
+    background-color: #F8F5F2;
+}
+.champions .champion_bottom #Highlight {
+    margin-top: -20px;
+}
+.champions .champion_bottom #Highlight .HLvideo{
+    width: 100%;
+    height: 300px;
+    background-color: #F8F5F2;
+    margin-top: -80px;
+}
+.champions .champion_bottom #ProBuilds {
+    display: flex;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: -20px;
+}
+.champions .champion_bottom #ProBuilds .probuild_char {
+    margin-top: -80px;
+    background-color: #F8F5F2;
+    color: #0F1C3F;
+    float: left;
+    width: 179.8px;
+    height: 250px;
+    padding: 5px 5px;
+    margin: -20px 10px;
+    text-align:center ;
+   
+}
+.champions .champion_bottom #ProBuilds .probuild_char .circle{
+        background: #456BD9;
+        border: 0.1875em solid #0F1C3F;
+        border-radius: 50%;
+        box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+        height: 4em;
+        width: 4em;
+        margin-top: 20px;
+        margin-left: 55px;
+}
+.champions .champion_bottom #ProBuilds .probuild_char .circle_mini{
+    background: #d60202;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    margin-top: 0px;
+    margin-left: 155px;
+}
+.champions .champion_top .champion_top_right ul li .arrow-3 {
+    position: absolute;
+	height: 0px; width: 0px;
+	border: 6px solid;
+	border-color: 
+		mediumseagreen
+		mediumseagreen
+		transparent
+		transparent;
+	transform: rotate(315deg);
+    margin-left: 215px;
+    margin-top: -15px;
+}
+
+.champions .champion_top .champion_top_right ul li .arrow-4 {
+    position: absolute;
+	height: 0px; width: 0px;
+	border: 6px solid;
+	border-color: 
+		red
+        red
+		transparent
+		transparent;
+	transform: rotate(135deg);
+    margin-left: 215px;
+    margin-top: -20px;
+}
+
+.champions .champion_top .champion_top_left .img_skill .skillcontent { 
+    background-color: var(--color-extra);
+    width: 350px;
+    height:fit-content ;
+    position: absolute;
+    left: 260px;
+    top: 255px;
+    z-index: 1;
+    display: none; 
+}
+.champions .champion_top .champion_top_left .img_skill .skillcontent p{
+    margin: 5px;
+
+}
+video{
+        position: relative;
+        object-fit: cover;
+        width: 350px;
+        height: 200px;
+        z-index: 0;
+}
+.champions .champion_top .champion_top_left .img_skill .skill:hover + .skillcontent{
+        display: block;
+}

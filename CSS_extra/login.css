@@ -1,0 +1,122 @@
+:root {
+   --color-main:#000000;
+   --color-extra:#1C1C1C;
+   --color-letter:#F8F5F2;
+   --color-highlight:#EDB83D;
+   --color-hard:#D70026;
+   --color-easy:#68A225;
+   --color-medium:#F5BE41;
+   --color-button:#202020;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Tektur', cursive;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-image:url("../Img/071823_Patch_13_14_Notes_Article_Banner.jpg");
+   background-size: 100% auto;
+}
+
+.wrapper {
+   width: 420px;
+   background: transparent;
+   border:2px solid rgb(255,255,255,.2) ;
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+   color: var(--color-letter);
+   border-radius: 10px;
+   padding: 30px 40px;
+}
+.wrapper h1 {
+   font-size: 36px;
+   text-align: center;
+}
+.wrapper .input-box {
+   position: relative;
+   width: 100%;
+   height: 50px;
+   margin: 30px 0;
+}
+
+.input-box input {
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   outline: none;
+   border: 2px solid rgb(255,255,255,.2);
+   border-radius: 40px;
+   font-size: 16px;
+   color: var(--color-letter);
+   padding: 20px 45px 20px 20px ;
+}
+.input-box input::placeholder {
+   color: var(--color-letter);
+}
+.input-box span {
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+   display: flex;
+   justify-content: space-between;
+   font-size: 14.5px;
+   margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+   accent-color: var(--color-highlight);
+   margin-right: 3px;
+   margin-left: 10px;
+}
+.remember-forgot a {
+   color: var(--color-letter);
+   text-decoration: none;
+   margin-right: 10px;
+}
+.remember-forgot a:hover {
+   color:var(--color-highlight);
+   font-weight: 600;
+}
+
+.wrapper .btn {
+   width: 100%;
+   height: 40px;
+   background: var(--color-letter);
+   border: none;
+   outline: none;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgba(122,122,122,.2);
+   cursor: pointer;
+   font-size: 15px;
+   color: var(--color-extra);
+   font-weight: 600;
+}
+
+.wrapper .register-link {
+   font-size: 14.5px;
+   text-align: center;
+   margin: 15px 0 10px;
+}
+
+.register-link p a {
+   color: var(--color-letter);
+   text-decoration: none;
+   font-weight: 800;
+}
+.register-link p a:hover {
+   color:var(--color-highlight) ;
+
+}

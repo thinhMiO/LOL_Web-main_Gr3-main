@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    min-height: 100vh;
+}
+.header  {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    /* background-image: url("../Img/071823_Patch_13_14_Notes_Article_Banner.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+   
+}
+.news_main {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các div xuống dòng khi không đủ không gian */
+
+}
+.IntroContainer{
+    margin: 10px auto 100px auto ;
+    width: 90%;
+    height: 100px;
+    background-color: #a59f9f;
+    -webkit-clip-path: polygon(0 0%, calc(100% - 0) 0%, 100% 0, 100% calc(100% - 0), calc(100% - 0) 100%, 0 100%, 0% calc(100% - 0), 0% 0);
+    clip-path: polygon(0 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 0px), calc(100% - 10px) 100%, 0 100%, 0% calc(100% - 10px), 0% 0);
+}
+.IntroContainer .IntroContainer_contain{
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+}
+.IntroContainer .introsub{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    font-family: "Beaufort for LOL", serif;
+
+}
+.IntroContainer .introsub_1{
+    min-width: 0px;
+    max-width: 350px;
+    font-size: 12px;
+    margin-left: 4%;
+    border-left: 1px solid rgb(56, 73, 81);
+    padding: 10px 0px 10px 4%;
+}
+.news_main .news_card {
+    max-width: 659px;
+    margin:10px 50px 100px 50px;
+    height: 480px;
+    float: left;
+    background-color: white;
+    box-shadow: 1px 1px 10px gray;
+    transition: all 0.2s ease-in-out;
+    word-wrap: break-word;
+    flex: 1 0 30%;
+    clear: both;
+}
+.news_main .news_card a{
+    text-decoration: none;
+}
+.news_main .news_card:hover{
+    transform: scale(1.01);
+    filter: brightness(80%);
+}
+.news_main .news_card .image{
+    height: 300px;
+}
+.news_main .news_card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    clear: both;
+}
+
+.news_main .news_card .text {
+    clear: both;
+    padding: 5px;
+    height: 140px;
+    color: gray;
+    margin:5px ;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.news_main .news_card .text h3 {
+    color: var(--color-main);
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.news_main .news_card .time {
+    width: 100%;
+    max-height:30px;
+    
+}
+.news_main .news_card .time p{
+    color: black;
+    float: right;
+    padding-right: 8px;
+}
+.pagination {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.pagination a,strong {
+    border: 1px white solid;
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .pagination strong{
+    background: white;
+    color: black;
+
+  }
+  .pagination a:hover{
+    background: aqua;
+    color: black;
+  }
+  .disable {
+    pointer-events: none;
+    cursor: default;
+}

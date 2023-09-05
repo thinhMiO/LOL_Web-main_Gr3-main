@@ -1,0 +1,251 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    min-height: 90vh;
+    background: var(--color-main);
+    color: var(--color-letter);
+}
+:root {
+    --color-main:#000000;
+    --color-extra:#1C1C1C;
+    --color-letter:#F8F5F2;
+    --color-highlight:#EDB83D;
+    --color-hard:#D70026;
+    --color-easy:#68A225;
+    --color-medium:#F5BE41;
+    --color-button:#202020;
+}
+/*-------------HEADER------------------*/
+.header__navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 5px 70px;
+    background: var(--color-extra);
+    /* background-color: transparent; */
+    display: flex;
+    align-items:center ;
+    z-index: 20;
+    transition: background-color 0.3s;
+    
+}
+.header__navbar:hover {
+    background: var(--color-extra);
+    box-shadow: 0px 2px 10px var(--color-main);
+    transition: background-color 0.3s;
+}
+
+.header__navbar__menu {
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 30px;
+}
+
+.header__navbar__avatar img {
+    max-height: 75px;
+    border-radius:50%;
+}
+
+.header__navbar__menu .left a {
+    font-size: 20px;
+    color: var(--color-letter);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.header__navbar__menu .left a:hover {
+    color: var(--color-highlight);
+}
+.header__navbar__menu .right{
+    margin-top:30px ;
+}
+.header__navbar__menu .right a{
+   position: relative;
+   bottom: 10px;
+   left: 10px;
+}
+.header__navbar__menu .right a span {
+    font-size: 25px;
+    color: var(--color-letter);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+.header__navbar__menu .right a span:hover {
+    color: var(--color-highlight);
+}
+.header__navbar__menu  .search_bar {
+    position: relative;
+    top: 0px;
+    left: -50px;
+}
+.header__navbar__menu input[type=text]{
+    width: 300px;
+    height: 30px;
+}
+.header  {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    /* background-image: url("../Img/071823_Patch_13_14_Notes_Article_Banner.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+/* search-box */
+#search-box{
+    background: #ffff;
+    border-radius: 30px;
+    margin-left: 150px;
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 0;
+    padding: 0;
+    transition:all 0.5s ease-in-out  ;
+}
+#search-box:hover #search-text, #search-box #search-text:valid{
+    width: 300px;
+    padding: 10px 0px 10px 15px;
+    margin-left: 30px;
+}
+#search-box #search-btn{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.IntroContainer{
+    margin: 10px auto 100px auto ;
+    width: 90%;
+    height: 100px;
+    background-color: #a59f9f;
+    -webkit-clip-path: polygon(0 0%, calc(100% - 0) 0%, 100% 0, 100% calc(100% - 0), calc(100% - 0) 100%, 0 100%, 0% calc(100% - 0), 0% 0);
+    clip-path: polygon(0 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 0px), calc(100% - 10px) 100%, 0 100%, 0% calc(100% - 10px), 0% 0);
+}
+.IntroContainer .IntroContainer_contain{
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+.IntroContainer .introsub{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    font-family: "Beaufort for LOL", serif;
+
+}
+.IntroContainer .introsub_1{
+    min-width: 0px;
+    max-width: 350px;
+    font-size: 18px;
+    margin-left: 4%;
+    border-left: 1px solid rgb(56, 73, 81);
+    padding: 10px 0px 10px 4%;
+}
+.search-else{
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+.search-else h3{
+    font-family: "Beaufort for LOL", serif;
+    font-size: 24px;
+}
+.champion_role{
+    margin: 30px 200px;
+}
+.champion_role button{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left:-2px;
+    background-color: #cdc9c4;
+    cursor: pointer;
+}
+.champion_role button img{
+    width: 40px;
+    height: 40px;
+}
+.champion_role button:hover{
+    background-color: #F5BE41;
+    background-color: #dd5ae4;
+}
+.champion_big_card .tabcontent {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 80%;
+    margin: auto;
+    padding-bottom:10px ;
+ 
+}
+.champion_big_card .tabcontent .champions_card{
+    position: relative;
+    width: 200px;
+    margin-left: 30px;
+    height: 300px;
+    margin-bottom: 45px;
+   background-color: #F8F5F2;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.champion_big_card .tabcontent .champions_card .img_char{
+    width: 200px;  
+    height: 300px;
+    
+}
+.champion_big_card .tabcontent .champions_card .img_char img{
+    width: 200px;  
+    height: 300px;
+    object-fit: cover;
+   transition: 1s linear;
+   border-radius: 10px;
+}
+.champion_big_card .tabcontent .champions_card .img_char img:hover{
+    border-radius: 0;
+}
+.champion_big_card .tabcontent .champions_card .text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.champion_big_card .tabcontent .champions_card .text p{
+  background: rgb(0, 0, 0);
+  background: rgba(1, 1, 1, 1); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.champion_big_card .tabcontent .champions_card:hover .text p {
+   opacity: 1;
+}
